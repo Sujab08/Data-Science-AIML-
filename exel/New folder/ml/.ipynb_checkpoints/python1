@@ -1,0 +1,15 @@
+"""
+from sklearn.linear_model import LinearRegression
+le=LinearRegression()
+X=[[2,1],[2,2],[2,3],[2,4],[2,5],[2,6],[3,1],[3,2],[4,1],[4,2],[4,3],[5,1],[5,2],[7,2],[7,3],[7,4],[8,1],[8,2],[8,3],[9,3],[9,5],[9,6],[10,1],[10,2],[10,5],[10,9],[10,11]]
+y=[2,4,6,8,10,12,3,6,4,8,12,5,10,14,21,28,8,16,24,27,45,54,10,20,50,90,110]
+le.fit(X,y)
+a=int(input("enter a number:"))
+b=int(input("enter a number:"))
+result=le.predict([[a,b]])
+print(f'according to your input your answer is {result}')
+"""
+import pandas as pd
+df=pd.read_csv(r"C:\Users\kumar\Downloads\archive (1)\Students_Performance_knn.csv")
+
+print(df.isna().sum())
